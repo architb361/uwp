@@ -1,0 +1,38 @@
+﻿<Page
+    x:Class="challanges.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:challanges"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Grid Margin="10,0,0,0" Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"></RowDefinition>
+            <RowDefinition Height="Auto"></RowDefinition>
+            <RowDefinition Height="Auto"></RowDefinition>
+            <RowDefinition Height="Auto"></RowDefinition>
+            <RowDefinition Height="Auto"></RowDefinition>
+            <RowDefinition Height="*"></RowDefinition>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="2*"></ColumnDefinition>
+            <ColumnDefinition Width="3*"></ColumnDefinition>
+            <ColumnDefinition Width="1*"></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        <TextBlock x:Name="textBlock" Text="ACME Sales Corp" FontSize="48" Grid.ColumnSpan="3" Margin="0,0,0,20"/>
+        
+        <TextBlock Grid.Row="1" Grid.Column="0" Text="First Name:" VerticalAlignment="Center"></TextBlock>
+        <TextBox Grid.Column="1" Grid.Row="1" Margin="0,0,0,10"></TextBox>
+
+        <TextBlock Grid.Column="0" Grid.Row="2" Text="Second Name:" VerticalAlignment="Center"></TextBlock>
+        <TextBox Grid.Column="1" Grid.Row="2" Margin="0,0,0,10"></TextBox>
+
+        <TextBlock Grid.Column="0" Grid.Row="3" Text="Email:" VerticalAlignment="Center"></TextBlock>
+        <TextBox Grid.Column="1" Grid.Row="3" Margin="0,0,0,10"></TextBox>
+
+        <Button Grid.Column="1" Grid.Row="4" Content="Save"></Button>
+
+    </Grid>
+</Page>
