@@ -70,21 +70,8 @@
         <GridView Grid.Row="1" ItemsSource="{x:Bind Contacts}" Margin="20">
             <GridView.ItemTemplate>
                 <DataTemplate x:DataType="data:Contact">
-                    <StackPanel HorizontalAlignment="Center"
-                                Margin="10">
-
-                        <Image Source="{x:Bind AvatarPath}"
-                               Width="100"
-                               Height="100" />
-                        <StackPanel Orientation="Horizontal"
-                                    Margin="0,10,0,0"
-                                    HorizontalAlignment="Center">
-                            <TextBlock Text="{x:Bind FirstName}"
-                                       Margin="0,0,5,0" />
-                            <TextBlock Text="{x:Bind LastName}" />
-                        </StackPanel>
-
-                    </StackPanel>
+                    <local:ContactTemplate HorizontalAlignment="Stretch"
+                                           VerticalAlignment="Stretch" />
                 </DataTemplate>
             </GridView.ItemTemplate>
         </GridView>
