@@ -1,0 +1,26 @@
+﻿<Page
+    x:Class="IOT.VerifyUser"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:IOT"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    Loaded="Page_Loaded"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="1*" />
+            <RowDefinition Height="1*" />
+        </Grid.RowDefinitions>
+        <CaptureElement Grid.Row="0"
+                        x:Name="capturePreview" />
+        <Button Grid.Row="1"
+                Content="Verify"
+                Name="verify"
+                FontSize="50" 
+                HorizontalAlignment="Center"
+                Click="verify_Click" />
+
+    </Grid>
+</Page>
